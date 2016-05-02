@@ -1,4 +1,4 @@
 OI
 ===
 
-Some short code I've use in OI. `hh.h` included.
+Some code I used in OI. `hh.h` included.
