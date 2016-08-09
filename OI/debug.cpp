@@ -45,7 +45,7 @@ Descr(
   
   Descr(
     Block,
-    Block a function's evaluation
+    make a function expantion blocked(and should be expanded after one eval outside)
   )
   
   Descr(
