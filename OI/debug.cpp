@@ -1,5 +1,7 @@
+#define __use_Descr
+
 #ifdef __use_Descr
-  #define Descr(functional,...) namespace zballCodes_##__FILE__{ \
+  #define Descr(functional,...) namespace zballCodes_macro{ \
     const char* functional##_desc=#__VA_ARGS__; \
   }
 #else
@@ -7,7 +9,7 @@
 #endif
 
 Descr(
-  __content__,
+  __content_,
   useful macros for debugging
 )
 
@@ -109,3 +111,6 @@ Descr(
 	#define codei(...)
 
 #endif
+
+#undef Descr
+#undef __use_Descr
